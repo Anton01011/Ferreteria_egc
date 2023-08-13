@@ -3,13 +3,13 @@ body {
     background-color: #f8f9fa;
   }
  
-  .navbar-brand {
+ /*  .navbar-brand {
     color: #fff;
     font-weight: bold;
   }
   .nav-link {
     color: #fff;
-  }
+  } */
   /* Agregar transparencia al logotipo */
   .transparent-logo {
     opacity: 20; /* Ajusta el valor según el nivel de transparencia deseado */

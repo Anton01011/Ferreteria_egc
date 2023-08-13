@@ -5,11 +5,11 @@ const salesData = [
     },
     {
       name: 'Productos de plomería',
-      data: [50, 60, 80, 110, 150, 190, 220, 250, 280, 310]
+      data: [50, 0, 80, 20, 100, 30, 50, 80, 280, 310]
     },
     {
       name: 'Productos electricos',
-      data: [70, 90, 110, 130, 150, 170, 190, 210, 230, 250]
+      data: [70, 90, 30, 10, 150, 70, 290, 40, 0, 10]
     }
   ];
 
@@ -26,7 +26,7 @@ const salesData = [
     },
     yAxis: {
       title: {
-        text: ''
+        text: 'Ventas locales'
       }
     },
     legend: {
@@ -43,3 +43,6 @@ const salesData = [
     },
     series: salesData
   });
+
+
+  

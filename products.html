@@ -6,6 +6,8 @@
   <title>Productos - Ferretería XYZ</title>
   <!-- Enlazar CSS de Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Enlazar la librería Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Enlazar CSS personalizado -->
   <link rel="stylesheet" href="css/products.css">
 </head>
@@ -43,49 +45,435 @@
   </nav>
 
   <!-- Main Content -->
-  <div class="container mt-5">
-    <h2 class="mb-4">Nuestros Productos</h2>
+  <div class="container">
+    <h4 class="my-4">Presentación de Productos</h4>
     <div class="row">
-      <!-- Producto 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1">
+      <!-- Card del Producto 1 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card h-80">
+          <img src="/img/01_Flexómetro Gripper.png" class="card-img-top" alt="Producto 1">
           <div class="card-body">
-            <h5 class="card-title">Herramienta 1</h5>
-            <p class="card-text">Descripción de la herramienta 1.</p>
-            <p class="card-text"><strong>Precio: $50.00</strong></p>
-            <a href="#" class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Detalles</a>
+            <h5 class="card-title">Flexómetro Gripper </h5>
+            <p class="card-text">Descripción del Producto 1. 
+            </p>
+            <p class="card-text"><strong>Precio: $189.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>
           </div>
         </div>
       </div>
 
-      <!-- Producto 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2">
+      <!-- Card del Producto 2 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card h-80">
+          <img src="img/02_Martillo pulido.png" class="card-img-top" alt="Producto 2">
           <div class="card-body">
-            <h5 class="card-title">Herramienta 2</h5>
-            <p class="card-text">Descripción de la herramienta 2.</p>
-            <p class="card-text"><strong>Precio: $30.00</strong></p>
-            <a href="#" class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto2">Detalles</a>
-          </div>
+            <h5 class="card-title">Martillo pulido</h5>
+            <p class="card-text">Descripción del Producto 2. </p>
+            <p class="card-text"><strong>Precio: $162.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
         </div>
       </div>
 
-      <!-- Producto 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="img/producto3.jpg" class="card-img-top" alt="Producto 3">
+      <!-- Card del Producto 3 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card h-80">
+          <img src="img/03_Cuchara.png" class="card-img-top" alt="Producto 3">
           <div class="card-body">
-            <h5 class="card-title">Herramienta 3</h5>
-            <p class="card-text">Descripción de la herramienta 3.</p>
-            <p class="card-text"><strong>Precio: $40.00</strong></p>
-            <a href="#" class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto3">Detalles</a>
-          </div>
+            <h5 class="card-title">Cuchara</h5>
+            <p class="card-text">Descripción del Producto 3. </p>
+            <p class="card-text"><strong>Precio: $200.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 4 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/04_Nivel torpedo magnético.png" class="card-img-top" alt="Producto 4">
+          <div class="card-body">
+            <h5 class="card-title">Nivel torpedo magnético 9"</h5>
+            <p class="card-text">Descripción del Producto 4. </p>
+            <p class="card-text"><strong>Precio: $111.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 5 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/05_palacuadradapng.jpg" class="card-img-top" alt="Producto 5">
+          <div class="card-body">
+            <h5 class="card-title">Pala cuadrada puño"</h5>
+            <p class="card-text">Descripción del Producto 5. </p>
+            <p class="card-text"><strong>Precio: $239.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      
+      <!-- Card del Producto 6 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/06_Carretilla 5.5 ft3.png" class="card-img-top" alt="Producto 6">
+          <div class="card-body">
+            <h5 class="card-title">Carretilla 5.5 ft3"</h5>
+            <p class="card-text">Descripción del Producto 6. </p>
+            <p class="card-text"><strong>Precio: $1,350.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 7 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/07_Talacho-pico 2.5 lb.png" class="card-img-top" alt="Producto 7">
+          <div class="card-body">
+            <h5 class="card-title">Talacho-pico 2.5 lb"</h5>
+            <p class="card-text">Descripción del Producto 7. </p>
+            <p class="card-text"><strong>Precio: $304.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 8 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/08_Manguera de Nivel.png" class="card-img-top" alt="Producto 8">
+          <div class="card-body">
+            <h5 class="card-title">Manguera de Nivel 1/4</h5>
+            <p class="card-text">Descripción del Producto 8. </p>
+            <p class="card-text"><strong>Precio: $316.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div> 
+
+      <!-- Card del Producto 9 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/09_ Arco profesional.png" class="card-img-top" alt="Producto 9">
+          <div class="card-body">
+            <h5 class="card-title"> Arco profesional</h5>
+            <p class="card-text">Descripción del Producto 9. </p>
+            <p class="card-text"><strong>Precio: $162.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 10 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/10_Navaja.png" class="card-img-top" alt="Producto 10">
+          <div class="card-body">
+            <h5 class="card-title">Navaja</h5>
+            <p class="card-text">Descripción del Producto 10. </p>
+            <p class="card-text"><strong>Precio: $141.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 11 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/11_ Perico.png" class="card-img-top" alt="Producto 11">
+          <div class="card-body">
+            <h5 class="card-title"> Perico</h5>
+            <p class="card-text">Descripción del Producto 11. </p>
+            <p class="card-text"><strong>Precio: $115.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 12 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/12_Disco Sierra Circular 7-1.png" class="card-img-top" alt="Producto 12">
+          <div class="card-body">
+            <h5 class="card-title">Disco Sierra Circular 7-1</h5>
+            <p class="card-text">Descripción del Producto 12. </p>
+            <p class="card-text"><strong>Precio: $307.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 13 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/13_Juego con 6 desarmadores.png" class="card-img-top" alt="Producto 13">
+          <div class="card-body">
+            <h5 class="card-title">Juego con 6 desarmadores</h5>
+            <p class="card-text">Descripción del Producto 13. </p>
+            <p class="card-text"><strong>Precio: $115.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 14 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/14_Pinza de presión.png" class="card-img-top" alt="Producto 14">
+          <div class="card-body">
+            <h5 class="card-title">Pinza de presión</h5>
+            <p class="card-text">Descripción del Producto 14. </p>
+            <p class="card-text"><strong>Precio: $162.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 15 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/15_Rotomartillo .png" class="card-img-top" alt="Producto 15">
+          <div class="card-body">
+            <h5 class="card-title">Rotomartillo 1/2"</h5>
+            <p class="card-text">Descripción del Producto 15. </p>
+            <p class="card-text"><strong>Precio: $616.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 16 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/16_Sierra circular.png" class="card-img-top" alt="Producto 16">
+          <div class="card-body">
+            <h5 class="card-title">Sierra circular</h5>
+            <p class="card-text">Descripción del Producto 16. </p>
+            <p class="card-text"><strong>Precio: $1595.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 17 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/17_ Sierra Caladora.png" class="card-img-top" alt="Producto 17">
+          <div class="card-body">
+            <h5 class="card-title"> Sierra Caladora</h5>
+            <p class="card-text">Descripción del Producto 17. </p>
+            <p class="card-text"><strong>Precio: $1014.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 18 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/18_Cortadora de Metales.png" class="card-img-top" alt="Producto 18">
+          <div class="card-body">
+            <h5 class="card-title">Cortadora de Metales</h5>
+            <p class="card-text">Descripción del Producto 18. </p>
+            <p class="card-text"><strong>Precio: $3112.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 19 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/19_Soplete.png" class="card-img-top" alt="Producto 19">
+          <div class="card-body">
+            <h5 class="card-title">Soplete</h5>
+            <p class="card-text">Descripción del Producto 19. </p>
+            <p class="card-text"><strong>Precio: $315.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 20 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/20_Manguera para Agua.png" class="card-img-top" alt="Producto 20">
+          <div class="card-body">
+            <h5 class="card-title">Manguera para Agua</h5>
+            <p class="card-text">Descripción del Producto 20. </p>
+            <p class="card-text"><strong>Precio: $189.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 21 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/21_Conector rápido.png" class="card-img-top" alt="Producto 21">
+          <div class="card-body">
+            <h5 class="card-title">Conector rápido</h5>
+            <p class="card-text">Descripción del Producto 21. </p>
+            <p class="card-text"><strong>Precio: $42.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 22 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/22_Conector flexible.png" class="card-img-top" alt="Producto 22">
+          <div class="card-body">
+            <h5 class="card-title">Conector flexible</h5>
+            <p class="card-text">Descripción del Producto 22. </p>
+            <p class="card-text"><strong>Precio: $29.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 23 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/23-Tijera para poda.png" class="card-img-top" alt="Producto 23">
+          <div class="card-body">
+            <h5 class="card-title">Tijera para poda</h5>
+            <p class="card-text">Descripción del Producto 23. </p>
+            <p class="card-text"><strong>Precio: $125.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 24 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/24_Clavo de cemento.png" class="card-img-top" alt="Producto 24">
+          <div class="card-body">
+            <h5 class="card-title">Clavo de cemento</h5>
+            <p class="card-text">Descripción del Producto 2. </p>
+            <p class="card-text"><strong>Precio: $169.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 25 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/25_Pegamento PVC.png" class="card-img-top" alt="Producto 25">
+          <div class="card-body">
+            <h5 class="card-title">Pegamento</h5>
+            <p class="card-text">Descripción del Producto 25. Aquí puedes proporcionar más detalles sobre el producto.</p>
+            <p class="card-text"><strong>Precio: $189.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+      <!-- Card del Producto 26 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/26_Tinaco.png" class="card-img-top" alt="Producto 26">
+          <div class="card-body">
+            <h5 class="card-title">Tinaco</h5>
+            <p class="card-text">Descripción del Producto 26. </p>
+            <p class="card-text"><strong>Precio: $1945.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+        <!-- Card del Producto 27 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/27_Cable Eléctrico.png" class="card-img-top" alt="Producto 27">
+          <div class="card-body">
+            <h5 class="card-title">Cable Eléctrico</h5>
+            <p class="card-text">Descripción del Producto 27. </p>
+            <p class="card-text"><strong>Precio: $389.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+      
+      <!-- Card del Producto 28 -->
+      <div class="col-6 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="img/28-Apagador y contacto.png" class="card-img-top" alt="Producto 28">
+          <div class="card-body">
+            <h5 class="card-title">apagador</h5>
+            <p class="card-text">Descripción del Producto 28. </p>
+            <p class="card-text"><strong>Precio: $78.00</strong></p>
+            <button class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Info</button>
+            <button class="btn btn-success btn-cart" title="Añadir al Carrito" data-toggle="modal" data-target="#cartModal"> <i class="fas fa-shopping-cart"></i></button>          </div>
+        </div>
+      </div>
+
+
+      <!-- Añadir mas cards xd -->
+
+    </div>
+  </div>
+
+<!-- Modales para mostrar detalles de productos -->
+<div class="modal fade" id="modalProducto1" tabindex="-1" role="dialog" aria-labelledby="modalProducto1Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProducto1Label">Detalles del Producto 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Detalles del Producto 1 -->
+        <p>Este producto es una herramienta versátil y confiable que te ayudará en tus tareas cotidianas y proyectos. Está diseñado para brindarte comodidad, precisión y durabilidad. Con características como su diseño ergonómico, materiales de alta calidad y facilidad de uso, este producto se convertirá en una herramienta indispensable en tu colección.</p>
+        <p>Características principales:</p>
+        <ul>
+          <li>Diseño ergonómico para un agarre cómodo y reducción de la fatiga</li>
+          <li>Materiales duraderos que garantizan una larga vida útil</li>
+          <li>Fácil de usar y adecuado para una variedad de aplicaciones</li>
+          <li>Construcción robusta y resistente para enfrentar tareas difíciles</li>
+          <li>Calidad y rendimiento excepcionales a un precio asequible</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+  <div class="modal fade" id="modalProducto2" tabindex="-1" role="dialog" aria-labelledby="modalProducto2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProducto2Label">Detalles del Producto 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--  Detalles adicionales del producto 2 -->
+          <p>Detalles adicionales del Producto 2.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Modales para mostrar detalles de productos -->
   <div class="modal fade" id="modalProducto1" tabindex="-1" role="dialog" aria-labelledby="modalProducto1Label" aria-hidden="true">
@@ -100,10 +488,32 @@
     <!-- Contenido del modal para el Producto 3 -->
   </div>
 
+  <!-- Modal para el carrito de compras -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Añadir al Carrito</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Contacta al desarrollador para añadir actualizaciones!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Enlazar JS de Bootstrap (jQuery y Popper.js) y Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  
 </body>
 </html>
