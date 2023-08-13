@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Ferretería XYZ</title>
+  <!-- Enlazar CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Enlazar CSS personalizado -->
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Ferretería EGC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Administración</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="stats.html">Estadísticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h2 class="mb-4">Nuestros Productos</h2>
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Herramienta 1</h5>
+            <p class="card-text">Descripción de la herramienta 1.</p>
+            <p class="card-text"><strong>Precio: $50.00</strong></p>
+            <a href="#" class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto1">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Herramienta 2</h5>
+            <p class="card-text">Descripción de la herramienta 2.</p>
+            <p class="card-text"><strong>Precio: $30.00</strong></p>
+            <a href="#" class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto2">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/producto3.jpg" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Herramienta 3</h5>
+            <p class="card-text">Descripción de la herramienta 3.</p>
+            <p class="card-text"><strong>Precio: $40.00</strong></p>
+            <a href="#" class="btn btn-primary btn-detalle" data-toggle="modal" data-target="#modalProducto3">Detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modales para mostrar detalles de productos -->
+  <div class="modal fade" id="modalProducto1" tabindex="-1" role="dialog" aria-labelledby="modalProducto1Label" aria-hidden="true">
+    <!-- Contenido del modal para el Producto 1 -->
+  </div>
+
+  <div class="modal fade" id="modalProducto2" tabindex="-1" role="dialog" aria-labelledby="modalProducto2Label" aria-hidden="true">
+    <!-- Contenido del modal para el Producto 2 -->
+  </div>
+
+  <div class="modal fade" id="modalProducto3" tabindex="-1" role="dialog" aria-labelledby="modalProducto3Label" aria-hidden="true">
+    <!-- Contenido del modal para el Producto 3 -->
+  </div>
+
+  <!-- Enlazar JS de Bootstrap (jQuery y Popper.js) y Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

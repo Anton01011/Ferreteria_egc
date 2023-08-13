@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrar Productos</title>
+  <!-- Enlazar CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Enlazar CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Ferretería EGC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Administración</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="stats.html">Estadísticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="mt-5">Administrar Productos</h1>
+    <form id="product-form" class="mt-3">
+      <input type="hidden" id="product-id">
+      <div class="form-group">
+        <label for="product-name">Nombre:</label>
+        <input type="text" class="form-control" id="product-name" required>
+      </div>
+      <div class="form-group">
+        <label for="product-description">Descripción:</label>
+        <textarea class="form-control" id="product-description" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="product-price">Precio:</label>
+        <input type="number" class="form-control" id="product-price" required>
+      </div>
+      <div class="form-group">
+        <label for="product-image">Imagen:</label>
+        <input type="file" class="form-control-file" id="product-image">
+      </div>
+      <button id="save-product" class="btn btn-primary">Guardar</button>
+    </form>
+    
+    <ul id="product-list" class="mt-5"></ul>
+  
+  </div>
+
+  <!-- Enlazar JS de Bootstrap (jQuery y Popper.js) y Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script-admin.js"></script>
+</body>
+</html>

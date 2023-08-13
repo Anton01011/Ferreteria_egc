@@ -1,0 +1,64 @@
+/* Estilos adicionales para la página de productos */
+.product-card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-card .card-title {
+  font-weight: bold;
+}
+
+.product-card .btn-detalle {
+  background-color: #0a2446;
+  border-color: #0a2446;
+}
+
+.product-card .btn-detalle:hover {
+  background-color: #30589c;
+  border-color: #30589c;
+}
+
+.modal-dialog {
+  max-width: 500px;
+}
+
+/* Estilos para los modales de detalles de productos */
+.modal-content {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background-color: #0a2446;
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+}
+
+/* Estilos de las imágenes en los modales */
+.modal-product-img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Estilos para el texto de los modales */
+.modal-product-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-product-description {
+  margin-top: 10px;
+  color: #333;
+}
